@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>كتاب عيد ميلاد</title>
+<style>
+  body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(120deg, #ffe6f0, #ffd6cc);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .book {
+    width: 90%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    position: relative;
+  }
+  .page {
+    padding: 40px 30px;
+    min-height: 500px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: url('https://i.imgur.com/Gx6lD3C.png') no-repeat center top;
+    background-size: cover;
+  }
+  .page.active { display: flex; }
+
+  h1, h2 {
+    margin: 0 0 15px;
+    text-align: center;
+  }
+  h1 { font-size: 32px; color: #ff3366; text-shadow: 1px 1px 5px #fff; }
+  h2 { font-size: 24px; color: #ff6699; text-shadow: 1px 1px 3px #fff; }
+
+  p { font-size: 18px; line-height: 1.6; }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    background: #ff6699;
+    color: #fff;
+    transition: 0.3s;
+  }
+  button:hover { background: #ff3366; }
+
+  .page-number {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: #ff3366;
+  }
+
+  .decor {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    animation: sparkle 2s infinite alternate;
+  }
+
+  @keyframes sparkle {
+    from { transform: scale(1); opacity: 0.7; }
+    to { transform: scale(1.2); opacity: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="book">
+  <!-- الصفحات -->
+  <div class="page active" id="page0">
+    <h1>نشأة قمر</h1>
+    <p style="text-align:center; font-size:20px;">🌙✨🎂</p>
+    <p style="text-align:center; font-size:18px;">غلاف أولي كبير واحترافي للكتاب</p>
+    <div class="page-number">💗 1 💗</div>
+    <div class="decor">🎉</div>
+  </div>
+
+  <div class="page" id="page1">
+    <h1>كتاب صغير لعيد ميلادك 🥳🎂🎊✨</h1>
+    <p>الإهداء إلى أجمل إنسانة دخلت حياتي، إلى سبب ضحكتي وسعادتي فدنيا الخايبة هذي، اللي تخليني نرتاح وننسا تعب وهموم الدنيا 🫂 هذا الكتاب الصغير ولا الصفحات غي باش نقولك شحال كتعنيلي وشحال كيعنيلي نهار طلوعك يا القمر بحد ذاتو 😊💗</p>
+    <div class="page-number">💗 2 💗</div>
+    <div class="decor">🕯️</div>
+  </div>
+
+  <div class="page" id="page2">
+    <h2>الفصل الأول: نهار تزاديتي</h2>
+    <p>15 فيفري 2009، ولاول مرة غادي يخرج القمر، و يوري وينور الطريق للي ظلامت عليهم 😊💗</p>
+    <p>نهار تزاديتي مكاش غي نهار عادي كالايام، كان نهار تزاد فيه الفرحة ظهر فيه القمر لاول مرة وضوا لينا وبين ليا الطريق فهاد الدنيا، وتزادت فيه إنسانة غادي تبدلي حياتي كاملـة بلا ما نحس يا لوكان بكلمة منها صغيرة وبسيطة</p>
+    <p>منين عرفتك يا غيثوتي، وكلشي تبدل للأحسن، ووريتيني الدنيا بنظرةجديدة نظرة فيها الأمل، وفيها الحب، وفيها دنيتي لي هيا نتي.</p>
+    <div class="page-number">💗 3 💗</div>
+    <div class="decor">🕯️🍰</div>
+  </div>
+
+  <div class="page" id="page3">
+    <h2>الفصل الثاني: نتي فحياتي</h2>
+    <p>وجودك فحياتي ماشي صدفة، وجودك هو أجمل هدية عطاهالي الله</p>
+    <p>كنلقى الراحة فالهدرة معاك، والفرحة فضحكتك، والأمان غي ملي نكون عارف بلي نتي بخير.</p>
+    <p>كل نهار كنحبك أكثر من اللي قبلو، وكل لحظة نحمد ربي حيت جمعني بيك او. نشاله تا حاجة متوقفنا من مشاكل وصداع كبار كانو ولا صغار</p>
+    <div class="page-number">💗 4 💗</div>
+    <div class="decor">🕯️🍰🎈</div>
+  </div>
+
+  <div class="page" id="page4">
+    <h2>الفصل الثالث: تمنياتي ليك</h2>
+    <p>فهاد عيد الميلاد ديالك، كنتمنا ليك فرحة ما تكملش، وضحكة تبقى ديما مرسومة فوجهك، وأحلام كبيرة تتحقق وحدة بوحدة كي.ما يبغي قلبك و يسهلك فطريقك لي غانكون فسها اول داعم وسند وركيزة فيها</p>
+    <p>غنشاركك الضحك قبل الحزن، والنجاح قبل التعب، وكل لحظة زوينة تبغي تعيشيها نكون كطيف ليك ميفارقكش</p>
+    <div class="page-number">💗 5 💗</div>
+    <div class="decor">🎂🕯️💗</div>
+  </div>
+
+  <div class="page" id="page5">
+    <h2>الفصل الرابع: وعد مني</h2>
+    <p>نوعدك نبقى ديما جنبك، فالأيام الحلوة قبل المرة، ونكون الشخص اللي يفرح لفرحك💗، ويوقف معاك فكل خطوة فحياتك.</p>
+    <p>نوعدك نحبك بصح… حب يكبر مع الوقت، وما ينقصش مهما دازو السنين ورغم على كل المشاكل اللي واقعة والتوتر</p>
+    <div class="page-number">💗 6 💗</div>
+    <div class="decor">🎉🎂🕯️</div>
+  </div>
+
+  <div class="page" id="page6">
+    <h2>الخاتمة</h2>
+    <p>Happy birthday ya 3omri ❤️</p>
+    <p>Lyom nhar bzaf special hit tzadt fih ajmal insana 3raftha fhyati kolha 💗 ntmna lik Dhka wlbsma li matfar9ch wjhk nchlh, w lfrha li t3biii 9lbk 🫂😊 , w kolchi zwin ttmnayh ytha9e9 lik bd2idn lah</p>
+    <p>hablkk t3rfi belli wjoudk ya 3winati fhyati howa ahsen a7la w2fdl w 2rwe3 hadiya 3tahali rbi 🫂💗</p>
+    <p>Ykhlik lia dima snin daymaa nchlh ya 2e7la 9mra 9bltha wb yjma3ni bik flkhir w lfrh w nkonoo m3a b3d f bzaf dyel a3yad lmilaad jaya nchlh</p>
+    <p>Kanbghik bzaf ya ktkotiii Ghitaaa 🎂✨</p>
+    <p>from mustapha 😊🫂</p>
+    <div class="page-number">💗 7 💗</div>
+    <div class="decor">🎉🎂💋</div>
+  </div>
+
+  <!-- أزرار التنقل -->
+  <div class="nav-buttons">
+    <button id="prevBtn">السابق</button>
+    <button id="nextBtnBook">التالي</button>
+  </div>
+</div>
+
+<script>
+let currentPage = 0;
+const totalPages = 7;
+const pages = [];
+for(let i=0;i<totalPages;i++){
+  pages.push(document.getElementById('page'+i));
+}
+const prevBtn = document.getElementById('prevBtn');
+const nextBtnBook = document.getElementById('nextBtnBook');
+
+function showPage(index){
+  pages.forEach((p,i)=> p.classList.remove('active'));
+  pages[index].classList.add('active');
+}
+showPage(currentPage);
+
+nextBtnBook.onclick = ()=>{
+  if(currentPage < totalPages-1) currentPage++;
+  showPage(currentPage);
+}
+prevBtn.onclick = ()=>{
+  if(currentPage>0) currentPage--;
+  showPage(currentPage);
+}
+</script>
+</body>
+</html>
